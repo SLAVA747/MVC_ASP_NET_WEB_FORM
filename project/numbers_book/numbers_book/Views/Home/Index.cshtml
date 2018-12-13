@@ -1,6 +1,7 @@
-﻿<html>
+﻿@using GridMvc.Html
+<html>
 <head>
-    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/MvcGrid/mvc-grid.js"></script>
     <script>
         $(document).ready(function () {
             $.ajax({
@@ -9,16 +10,18 @@
                 url: '/Home/Index2',
                 success: function (data) {
                     $(data).each(function (index, item) {
-                        $('#mylist').append("<li>" + item.bla1 + "</li>");
-                    })
-          
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    alert('Error - ' + errorThrown);
-                }
-            });
-    });
-        </script>
+              
+
+        $('#mylist').append("<li>" + item.bla1 + "</li>");
+    })
+
+},
+error: function (jqXHR, textStatus, errorThrown) {
+    alert('Error - ' + errorThrown);
+}
+});
+});
+    </script>
 </head>
  <body>
            

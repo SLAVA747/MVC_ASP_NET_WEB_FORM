@@ -255,3 +255,5 @@ C:\Users\SLAVA747\Documents\GitHub\MVC_ASP_NET_WEB_FORM\project\numbers_book\num
 C:\Users\SLAVA747\Documents\GitHub\MVC_ASP_NET_WEB_FORM\project\numbers_book\numbers_book\bin\roslyn\VBCSCompiler.exe
 C:\Users\SLAVA747\Documents\GitHub\MVC_ASP_NET_WEB_FORM\project\numbers_book\numbers_book\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\SLAVA747\Documents\GitHub\MVC_ASP_NET_WEB_FORM\project\numbers_book\numbers_book\obj\Debug\numbers_book.csprojAssemblyReference.cache
+C:\Users\SLAVA747\Documents\GitHub\MVC_ASP_NET_WEB_FORM\project\numbers_book\numbers_book\bin\GridMvc.dll
+C:\Users\SLAVA747\Documents\GitHub\MVC_ASP_NET_WEB_FORM\project\numbers_book\numbers_book\bin\Mvc.Grid.Core.dll
