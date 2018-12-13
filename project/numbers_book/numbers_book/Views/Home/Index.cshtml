@@ -1,1 +1,11 @@
-﻿
+﻿$(document).ready(function () {
+  $("ul.speakers a").click(function (e) {
+    e.preventDefault();
+    $("#indicator").show();
+    var url = $(this).attr('href');
+    $.getJSON(url, null, function (speaker) {
+      $("#indicator").hide();
+      alert(speaker.FirstName);
+    });
+  });
+});

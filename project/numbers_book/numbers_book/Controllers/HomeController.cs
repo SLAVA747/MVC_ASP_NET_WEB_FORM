@@ -7,8 +7,10 @@ using numbers_book.Models;
 
 namespace numbers_book.Controllers
 {
+    
     public class HomeController : Controller
     {
+
         public ActionResult Index()
         {
             TB_DBContext db = new TB_DBContext();
@@ -18,9 +20,7 @@ namespace numbers_book.Controllers
                             {
                             a
                             }).ToList();
-            ViewBag.myresult = num_info;
-
-            return View(db);
+            return Json(num_info, JsonRequestBehavior.AllowGet); 
         }
     }
 }
