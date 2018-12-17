@@ -1,7 +1,22 @@
 ﻿@using GridMvc.Html
 <html>
 <head>
-    <script src="~/Scripts/MvcGrid/mvc-grid.js"></script>
+
+    <script src="/Scripts/dhtmlxcommon.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/Scripts/dhtmlxgrid.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/Scripts/dhtmlxgridcell.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <link rel="stylesheet" href="/Scripts/dhtmlxgrid.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/Scripts/skins/dhtmlxgrid_dhx_skyblue.css" type="text/css" media="screen" charset="utf-8">
+
+
+
+
+
+
+
+
     <script>
         $(document).ready(function () {
             $.ajax({
@@ -9,18 +24,24 @@
                 dataType: 'json',
                 url: '/Home/Index2',
                 success: function (data) {
-                    $(data).each(function (index, item) {
-              
 
-        $('#mylist').append("<li>" + item.bla1 + "</li>");
-    })
+                   
 
-},
-error: function (jqXHR, textStatus, errorThrown) {
-    alert('Error - ' + errorThrown);
-}
-});
-});
+                    //mygrid.load(data);
+
+                    //$(data).each(function (index, item) {
+
+
+                    // $('#mylist').append("<li>" + item.bla1 + "</li>");
+                    //})
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert('Error - ' + errorThrown);
+                }
+            });
+        });
+     
     </script>
 </head>
  <body>

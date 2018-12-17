@@ -21,6 +21,12 @@ namespace numbers_book.Controllers
         public JsonResult Index2()
         {
             TB_DBContext db = new TB_DBContext();
+            /* var num_info = (from a in db.Numbers
+                             join b in db.Company on a.CompanyId equals b.CompanyId
+                             select new
+                             {
+                                 bla1 = b.CompanyName
+                             }).ToList();*/
             var num_info = (from a in db.Numbers
                             join b in db.Company on a.CompanyId equals b.CompanyId
                             select new
